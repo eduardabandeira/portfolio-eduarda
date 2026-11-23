@@ -1,47 +1,38 @@
-# Portfólio Pessoal — Eduarda
+# Portfólio Pessoal — Eduarda Porto
 
-Portfólio online desenvolvido para a atividade prática da disciplina **Fundamentos da Programação Web** (UNINTER), com o objetivo de apresentar formação, projetos e contato em uma página única.
+Portfólio estático desenvolvido originalmente para a atividade prática da disciplina **Fundamentos da Programação Web** (UNINTER), reunindo apresentação, formação, projetos e contato em página única.
 
-🔗 **Site publicado:** []
+🔗 **Site publicado:** https://eduardabandeira.github.io/portfolio-eduarda/
 
 ## Sobre o projeto
 
-Single Page Website com navegação por âncoras, dividido em 4 seções acessíveis por um menu fixo:
+Single Page Website com navegação por âncoras e menu fixo, dividido em quatro seções:
 
-- **Sobre mim** — apresentação pessoal e áreas de interesse.
-- **Formação** — trilha de estudos e certificações, em formato de linha do tempo.
-- **Portfólio** — projetos de dados e automação.
-- **Contato** — formulário com validação em JavaScript e simulação de envio.
+- **Sobre mim** — resumo da trajetória entre pesquisa de mercado, dados e automação, com card de informações rápidas.
+- **Formação** — linha do tempo de formação e cursos, além de idiomas.
+- **Portfólio** — cards de projetos de dados, automação e estudo.
+- **Contato** — dados de contato e formulário com validação no navegador e modal de confirmação simulada.
 
 ## Funcionalidades
 
-- Navegação por âncoras, sem recarregar a página.
-- Menu responsivo (hambúrguer) para telas pequenas.
-- Alternância de tema claro/escuro, com preferência salva no navegador.
-- Validação de formulário (campos obrigatórios + formato de e-mail) com mensagens de erro inline.
-- Modal de confirmação simulando o envio da mensagem de contato.
+- Navegação por âncoras sem recarregamento da página.
+- Menu responsivo (hambúrguer) para telas menores.
+- Alternância de tema claro/escuro com preferência salva no `localStorage` (e fallback para `prefers-color-scheme`).
+- Validação de campos obrigatórios e formato de e-mail com feedback inline.
+- Modal de confirmação na simulação de envio.
 
 ## Tecnologias
 
 - HTML5
-- CSS3 (sem Bootstrap, Tailwind ou qualquer framework)
-- JavaScript puro (sem jQuery, React, Vue ou similares)
+- CSS3 (variáveis CSS, Grid/Flexbox e media queries, sem frameworks)
+- JavaScript (vanilla JS)
+- GitHub Pages (publicação via GitHub Actions)
 
 ## Estrutura de arquivos
 
-```
+```text
 portfolio-eduarda/
-├── index.html      # Estrutura e conteúdo das 4 seções
-├── estilo.css      # Estilos, temas (claro/escuro) e responsividade
+├── index.html      # Estrutura e conteúdo das seções
+├── estilo.css      # Estilos, temas claro/escuro e responsividade
 ├── script.js       # Tema, menu responsivo e validação do formulário
-└── README.md       # Este arquivo
-```
-
-## Como executar localmente
-
-1. Baixe ou clone este repositório.
-2. Abra a pasta no VS Code (`File > Open Folder`).
-3. Instale a extensão **Live Server** (Ritwick Dey).
-4. Clique com o botão direito em `index.html` → **Open with Live Server**.
-
-Não é necessário nenhum servidor, build ou instalação de dependências — é só HTML, CSS e JS estático.
+└── README.md       # Documentação do repositório
